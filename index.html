@@ -23,6 +23,7 @@
       .attribution {
         font-size: 11px;
         text-align: center;
+        margin-top: auto;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -37,18 +38,22 @@
         background: hsl(0, 0%, 8%);
         color: hsl(0, 0%, 100%);
       }
+
       .container {
+        position: relative;
         background: hsl(0, 0%, 12%);
         max-width: 600px;
-        width: 400px;
-        min-height: 600px;
-        padding: 40px 10px;
         margin: 70px auto;
+        width: 500px;
+        height: 800px;
+        padding: 40px 10px;
         display: flex;
         border-radius: 12px;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
       }
+  
       .contactLinks {
         text-decoration: none;
         color: hsl(0, 0%, 100%);
@@ -64,6 +69,9 @@
       .contactLinks:hover {
         background: hsla(0, 0%, 20%, 0.701);
       }
+      .contactLinks:focus {
+        color: hsl(0, 100%, 50%);
+      }
       h1 {
         margin: 20px 0 5px;
       }
@@ -77,51 +85,81 @@
         margin-bottom: 20px;
         font-size: 14px;
       }
-      img {
-        width: 150px;
-        height: 150px;
+      #imgContainer {
+        width: 160px;
+        height: 160px;
+        z-index: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-radius: 50%;
+        overflow: hidden;
+      }
+
+      img {
+        border-radius: 50%;
+        width: 450px;
+        height: 450px;
       }
     </style>
   </head>
   <body>
-    <main class="container" role="mainContent">
-      <img src="./myImage.jpg" alt="Image of myself" />
-      <h1>Abdulroqib Oladipo</h1>
-      <h2>Bremen, Germany</h2>
-      <p>Beginner Front-end developer and self-driven builder.</p>
+    <main role="mainContent">
+      <section class="container">
+        <div id="imgContainer">
+          <img src="./myImage.jpg" alt="Image of myself" />
+        </div>
+        <h1>Abdulroqib Oladipo</h1>
+        <h2>Bremen, Germany</h2>
+        <p>Beginner Front-end developer and self-driven builder.</p>
 
-      <a href="https://github.com/scyflix" class="contactLinks">Github</a>
-      <a
-        href="https://www.linkedin.com/in/abdulroqib-oladipo-a85197253/"
-        class="contactLinks"
-        >LinkedIn</a
-      >
-      <a href="https://x.com/abdulroqib123" class="contactLinks">Twitter/X</a>
-      <a
-        href="https://www.frontendmentor.io/profile/scyflix"
-        class="contactLinks"
-        >Frontend Mentor</a
-      >
-      <a
-        href="https://www.freecodecamp.org/abdulroqiboladipo"
-        class="contactLinks"
-        >freeCodeCamp</a
-      >
-      <a
-        href="https://scyflix.github.io/Abdulroqib-Portfolio/"
-        class="contactLinks"
-        >Portfolio</a
-      >
+        <a
+          target="_blank"
+          href="https://github.com/scyflix"
+          class="contactLinks"
+          >Github</a
+        >
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/abdulroqib-oladipo-a85197253/"
+          class="contactLinks"
+          >LinkedIn</a
+        >
+        <a
+          target="_blank"
+          href="https://x.com/abdulroqib123"
+          class="contactLinks"
+          >Twitter/X</a
+        >
+        <a
+          target="_blank"
+          href="https://www.frontendmentor.io/profile/scyflix"
+          class="contactLinks"
+          >Frontend Mentor</a
+        >
+        <a
+          target="_blank"
+          href="https://www.freecodecamp.org/abdulroqiboladipo"
+          class="contactLinks"
+          >freeCodeCamp</a
+        >
+        <a
+          target="_blank"
+          href="https://scyflix.github.io/Abdulroqib-Portfolio/"
+          class="contactLinks"
+          >Portfolio</a
+        >
+      </section>
     </main>
 
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="https://scyflix.github.io/Abdulroqib-Portfolio/">Abdulroqib Oladipo</a>.
-
+      >. Coded by
+      <a href="https://scyflix.github.io/Abdulroqib-Portfolio/"
+        >Abdulroqib Oladipo</a
+      >.
     </footer>
-
   </body>
 </html>
