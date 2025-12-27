@@ -43,6 +43,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://scyflix.github.io/Abdulroqib-Portfolio/)
+- Website - [Abdulroqib Oladipo](https://scyflix.github.io/Abdulroqib-Portfolio/)
 - Frontend Mentor - [@scyflix](https://www.frontendmentor.io/profile/scyflix)
 - Twitter - [@abdulroqib123](https://x.com/abdulroqib123)
